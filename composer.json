@@ -1,0 +1,39 @@
+{
+  "name": "ecphp/php-library-template",
+  "type": "library",
+  "description": "The ECPHP PHP project template.",
+  "homepage": "https://github.com/ecphp",
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": ">= 7.4"
+  },
+  "require-dev": {
+    "ecphp/php-conventions": "dev-master"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "EcPhp\\Library\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "EcPhp\\Library\\Test\\": "test/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "/home/pol/dev/git/b4/php-conventions"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "support": {
+    "issues": "https://github.com/ecphp",
+    "source": "https://github.com/ecphp"
+  }
+}
